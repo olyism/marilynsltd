@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -50,7 +48,7 @@ export const IndexPageTemplate = ({
         >
           {title}
         </h1>
-        <h3
+        { subheading && <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
@@ -62,7 +60,7 @@ export const IndexPageTemplate = ({
           }}
         >
           {subheading}
-        </h3>
+        </h3>}
       </div>
     </div>
     <section className="section section--gradient">
@@ -70,40 +68,37 @@ export const IndexPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
+              <div className="content">             
+                <h3>Drill Bits &amp; Pieces</h3>
+                <h3>Why Choose Us</h3>
+                <p>You could save thousands of dollars a year on drill bits by using our services!</p>
+                <h3>About Us</h3>
+                <p>We are based in Auckland, provide spot weld drill bits sharpening service on site at your location in Auckland region.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="columns">
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                  <div className="content">
+                    <h3>Contact us</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column is-6">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-BGX_L-btTdU9_4jyOnHSdqjs1v5r0OQc6S7ObQdmrusfAw/viewform?embedded=true" width="100%" height="1039" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+                <div className="column is-6">
+                  <div className="content">
+                    <h3>Mail Order</h3>
+                    <p>You can post your items if preferable. Please be sure to wrap your items nicely and include all of your contact information.</p>
+                    <h3>Get in touch</h3>
+                    <p>Mobile: 027 304 6811</p>
+                    <p>Email: <a href="mailto:marilyns.ltd@gmail.com">marilyns.ltd@gmail.com</a></p>
                   </div>
                 </div>
               </div>
