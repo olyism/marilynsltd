@@ -48,19 +48,7 @@ export const IndexPageTemplate = ({
         >
           {title}
         </h1>
-        { subheading && <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>}
+        <p className="has-text-centered"><a className="button is-large is-primary" href="#contact">Get started</a></p>
       </div>
     </div>
     <section className="section section--gradient">
@@ -68,11 +56,11 @@ export const IndexPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="content">             
+              <div className="content" id="whatWeDo">             
                 <h3>Drill Bits &amp; Pieces</h3>
                 <h3>Why Choose Us</h3>
                 <p>You could save thousands of dollars a year on drill bits by using our services!</p>
-                <h3>About Us</h3>
+                <h3 id="whoWeAre">About Us</h3>
                 <p>We are based in Auckland, provide spot weld drill bits sharpening service on site at your location in Auckland region.</p>
               </div>
             </div>
@@ -90,7 +78,7 @@ export const IndexPageTemplate = ({
               </div>
               <div className="columns">
                 <div className="column is-6">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-BGX_L-btTdU9_4jyOnHSdqjs1v5r0OQc6S7ObQdmrusfAw/viewform?embedded=true" width="100%" height="1039" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                  <iframe id="contact" src="https://docs.google.com/forms/d/e/1FAIpQLSe-BGX_L-btTdU9_4jyOnHSdqjs1v5r0OQc6S7ObQdmrusfAw/viewform?embedded=true" width="100%" height="1039" frameborder="0" marginheight="0" marginwidth="0" title="Contact" style={{height: '1039px'}}>Loading...</iframe>
                 </div>
                 <div className="column is-6">
                   <div className="content">

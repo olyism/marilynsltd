@@ -1,8 +1,8 @@
 ---
 templateKey: 'index-page'
-title: 'Great coffee with a conscience'
+title: 'Mobile Spot Weld Drill Bits Sharpening Service'
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: Mobile Spot Weld Drill Bits Sharpening Service
 subheading: Support sustainable farming while enjoying a cup
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
